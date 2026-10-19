@@ -66,7 +66,7 @@ def main():
         print(json.dumps({'status':'wrong_bot','expected':profile['username'],'actual':me.get('username')},ensure_ascii=False))
         return 3
     if args.check:
-        print(json.dumps({'status':'verified','username':me['username'],'id':me['id']},ensure_ascii=False))
+        print(json.dumps({'status':'verified','username':me['username'],'id':me['id'],'has_main_web_app':me.get('has_main_web_app',False)},ensure_ascii=False))
         return 0
     with urlopen(profile['web_app_url'],timeout=25) as response:
         page=response.read().decode()

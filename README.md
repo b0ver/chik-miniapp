@@ -47,3 +47,7 @@
 - [Telegram Mini Apps](https://core.telegram.org/bots/webapps).
 - [Telegram Bot API](https://core.telegram.org/bots/api).
 - [GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
+
+## Инженерные проверки и откат
+
+Команды проверки, CI/CD, настройка защиты ветки и восстановление описаны в [OPERATIONS.md](OPERATIONS.md).
